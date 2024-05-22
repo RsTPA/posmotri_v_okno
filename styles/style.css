@@ -162,7 +162,6 @@ fieldset {
   overflow-y: auto;
 }
 
-
 .content__details {
   display: flex;
 	flex-direction: column;
@@ -204,7 +203,6 @@ fieldset {
 .content__video-card:hover {
   text-decoration: underline;
 }
-
 
 .content__video-card-thumbnail {
   max-width: 194px;
