@@ -51,7 +51,6 @@ html {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  block-size: 54px;
   border: 0;
   gap: 5px;
 } 
@@ -71,14 +70,13 @@ html {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 21.6px;
 }
 
 .search-form__textfield {
   background-color: transparent;
   color: #FFF;
   inline-size: 225px;
-  block-size: 27px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -95,7 +93,7 @@ html {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 21.6px;
   cursor: pointer;
 }
 
@@ -122,7 +120,7 @@ html {
   padding-bottom: 4px;
 }
 
-.search-form__label .search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text  {
   text-decoration: underline;
 }
 
@@ -220,6 +218,10 @@ html {
 	align-items: flex-start;
 }
 
+.content__card-link_current {
+  background-color: transparent;
+}
+
 .content__card-link_current:active {
   background: rgba(84, 80, 80, 1);
 }
@@ -239,7 +241,8 @@ html {
   display: flex;
   flex-direction: column;
   flex-grow: 18;
-  inline-size: 187px;
+  max-inline-size: 187px;
+  inline-size: 100%;
 }
 
 .title {
@@ -251,8 +254,6 @@ html {
   line-height: 70.5px;
   text-transform: uppercase;
   margin-bottom: 26px;
-  inline-size: 260px;
-  block-size: 210px;
 }
 
 .content__accent {
@@ -261,7 +262,6 @@ html {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%;
   text-transform: uppercase;
 }
 
@@ -287,10 +287,11 @@ html {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   max-inline-size: 200px;
 }
 
@@ -298,6 +299,7 @@ html {
   display: flex;
   flex-direction: column;
   padding-top: 6px;
+  line-height: 16.2px;
 }
 
 .visually-hidden {
