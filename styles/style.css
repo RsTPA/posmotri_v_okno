@@ -219,10 +219,10 @@ html {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background: rgba(84, 80, 80, 1);
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background: rgba(84, 80, 80, 1);
 }
 
